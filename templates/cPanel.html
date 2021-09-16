@@ -1,0 +1,45 @@
+<div class="container mt-3">
+    <form class="well" ng-submit="insertProduct()">
+
+        <div class="form-group">
+            <label>Product name</label>
+            <input type="text" class="form-control" ng-model="name">
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="number" class="form-control" ng-model="price">
+        </div>
+        <div class="form-group">
+            <label>Type</label>
+            <select class="form-control" ng-model="type">
+                <option value="Galaxy">Galaxy</option>
+                <option value="iPone">iPone</option>
+                <option value="Hawaii">Hawaii</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" ng-model="descr"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Image1</label>
+            <input type="file" mds-file file="img1" base64="y1">
+        </div>
+        <img src="{{y1}}" class="mb-5" style="height: 200px;width: 200;border-radius:100%;"><br>
+
+        <div class="form-group">
+            <label>Image2</label>
+            <input type="file" mds-file file="img2" base64="y2">
+        </div>
+        <img src="{{y2}}" class="mb-5" style="height: 200px;width: 200;border-radius:100%;"><br>
+
+        <div class="form-group">
+            <label>Image3</label>
+            <input type="file" mds-file file="img3" base64="y3">
+        </div>
+        <img src="{{y3}}" class="mb-5" style="height: 200px;width: 200;border-radius:100%;"><br>
+        <button class="btn btn-info">Insert</button>
+    </form>
+
+</div>
